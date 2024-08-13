@@ -14,15 +14,32 @@ namespace Examen
             return n1 + n2 + n3;
         }
 
-        public string MensajeNotaFinal()
+        void MensajeNotaFinal(double CalcularNotaFinal, double n1, double n2)
         {
-            Console.WriteLine();
-        }
+            {
+                if (CalcularNotaFinal < 60)
+                {
+                    Console.WriteLine("Reprobado");
+                }
+                if (CalcularNotaFinal > 79)
+                {
+                    Console.WriteLine("Bueno");
+                }
+                if (CalcularNotaFinal < 89)
+                {
+                    Console.WriteLine("Muy Bueno");
+                }
+                if (CalcularNotaFinal > 89)
+                {
+                    Console.WriteLine("Sobresaliente");
+                }
+            }
 
-        public void Imprimir()
-        {
-            Console.WriteLine("---Nota Final---");
-            Console.WriteLine("---Nota Final---");
+            void Imprimir()
+            {
+                Console.WriteLine("---Nota Final---");
+                Console.WriteLine("---Nota Final---");
+            }
         }
     }
 }
